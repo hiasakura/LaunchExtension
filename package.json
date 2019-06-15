@@ -1,0 +1,29 @@
+{
+  "name": "hirocafe-project",
+  "version": "1.0.0",
+  "description": "This is test code for extension development",
+  "main": "index.js",
+  "scripts": {
+    "scaffold": "reactor-scaffold",
+    "sandbox": "reactor-sandbox",
+    "package": "reactor-packager",
+    "upload": "reactor-uploader"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hiasakura/LaunchExtension.git"
+  },
+  "author": "hirofumi asakura",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hiasakura/LaunchExtension/issues"
+  },
+  "homepage": "https://github.com/hiasakura/LaunchExtension#readme",
+  "devDependencies": {
+    "@adobe/reactor-packager": "^3.0.5",
+    "@adobe/reactor-sandbox": "^10.5.2",
+    "@adobe/reactor-scaffold": "^2.1.3",
+    "@adobe/reactor-turbine": "^25.5.0",
+    "@adobe/reactor-uploader": "^4.0.1"
+  }
+}
