@@ -1,6 +1,7 @@
 # LaunchExtension
 
 ・mkdir hirocafe-sample and move
+
 ・npm init
 package name: (hirocafe-sample) hirocafe-project
 version: (1.0.0)
