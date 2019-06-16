@@ -1,41 +1,42 @@
 # LaunchExtension
 
-・mkdir hirocafe-sample and move
+1. mkdir hirocafe-sample and move
 
-・npm init
-package name: (hirocafe-sample) hirocafe-project
-version: (1.0.0)
-description: This is test code for extension development
-entry point: (index.js)
-test command:
-git repository: https://github.com/hiasakura/LaunchExtension.git
-keywords:
-author: hirofumi asakura
-license: (ISC)
+2. npm init
+- package name: (hirocafe-sample) hirocafe-project
+- version: (1.0.0)
+- description: This is test code for extension development
+- entry point: (index.js)
+- test command:
+- git repository: https://github.com/hiasakura/LaunchExtension.git
+- keywords:
+- author: hirofumi asakura
+- license: (ISC)
 
+3. sudo npm install @adobe/reactor-scaffold --save-dev
+4. sudo npm install @adobe/reactor-turbine @adobe/reactor-sandbox --save-dev
+5. sudo npm install @adobe/reactor-packager --save-dev
 
-・sudo npm install @adobe/reactor-scaffold --save-dev
-・sudo npm install @adobe/reactor-turbine @adobe/reactor-sandbox --save-dev
-・sudo npm install @adobe/reactor-packager --save-dev
-
-・Modify package.json script
+6. Modify package.json script to use the alias command
   "scripts": {
     "scaffold":"reactor-scaffold", 
     "sandbox":"reactor-sandbox",
     "package":"reactor-packager"    
   },
 
-・npm run scaffold
-Our Hirocafe Project
-web
-1.0.0
-This is the training module for Launch Extension
-Hirofumi Asakura
+7. npm run scaffold
+- Our Hirocafe Project
+- web
+- 1.0.0
+- This is the training module for Launch Extension
+- Hirofumi Asakura
 
 > Add an extension configuration view
+
 > Add an event type
  sampleEvent
  Yes
+ 
 > Add a condition type
  sampleCondition
  Yes
@@ -51,17 +52,17 @@ Hirofumi Asakura
 > I'm done.
 
 
-・npm run sandbox
+8. npm run sandbox
 
-・For public, Request the application
+9. For public, Request the application
 https://developer.adobelaunch.com/extensions/submissions/create-listing/
 https://partners.adobe.com/exchangeprogram/experiencecloud
 
 
-・npm run package
+10. npm run package
 
-・sudo npm install @adobe/reactor-uploader --save-dev
-・modify the package.json and npm run upload
+11. sudo npm install @adobe/reactor-uploader --save-dev
+12. modify the package.json and npm run upload
   "scripts": {
     "scaffold": "reactor-scaffold",
     "sandbox": "reactor-sandbox",
@@ -69,7 +70,7 @@ https://partners.adobe.com/exchangeprogram/experiencecloud
     "upload": "reactor-uploader"
   },
 
-・Questions
+13. Questions
 >What is the path to your private key? 
 /Users/asakura/Dropbox/Personal/Tools/extensions/hirocafe-sample/key/private.key
 
