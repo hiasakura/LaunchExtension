@@ -1,5 +1,21 @@
 # LaunchExtension
 
+- Test Sites
+http://www.hirocafe.com/extension-demo/top.html
+
+
+- Documentation
+https://developer.adobelaunch.com/extensions/
+https://github.com/adobe/reactor-helloworld-extension
+https://www.youtube.com/watch?v=rxjtC9o4rl0&t=206s
+
+- Prerequisites
+・ Make Launch Admin and Grant all access
+・ Install node.js
+https://qiita.com/kyosuke5_20/items/c5f68fc9d89b84c0df09
+
+
+- Steps 
 1. mkdir hirocafe-sample and move
 
 2. npm init
