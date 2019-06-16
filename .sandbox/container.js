@@ -12,15 +12,15 @@ module.exports = {
        ],
     actions: [
       {
-        modulePath: 'extension-typekit/src/lib/actions/loadEmbedCode.js',
+        modulePath: 'hirocafe-sample/src/lib/actions/sampleaction.js',
         settings: {}
          }
        ]
      }
   ],
   extensions: {
-    'extension-typekit': {
-      displayName: 'Adobe Typekit',
+    'hirocafe-sample': {
+      displayName: 'hirocafe-sample',
      settings: {
        msgID: 'nxn1sig'
      }

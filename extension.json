@@ -45,15 +45,14 @@
   ],
   "actions": [
     {
-      "displayName": "sampleAction",
-      "name": "sampleaction",
+      "displayName": "Load Message Code",
+      "name": "oad-msg-code",
       "schema": {
         "$schema": "http://json-schema.org/draft-04/schema#",
         "type": "object",
         "properties": {}
       },
-      "libPath": "src/lib/actions/sampleaction.js",
-      "viewPath": "actions/sampleaction.html"
+      "libPath": "src/lib/actions/sampleaction.js"
     }
   ],
   "dataElements": [
