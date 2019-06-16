@@ -1,18 +1,24 @@
 # LaunchExtension
 
 - Test Sites
+
 http://www.hirocafe.com/extension-demo/top.html
 
 
 - Documentation
+
 https://developer.adobelaunch.com/extensions/
+
 https://github.com/adobe/reactor-helloworld-extension
+
 https://www.youtube.com/watch?v=rxjtC9o4rl0&t=206s
 
+
 - Prerequisites
+
 ・ Make Launch Admin and Grant all access
+
 ・ Install node.js
-https://qiita.com/kyosuke5_20/items/c5f68fc9d89b84c0df09
 
 
 - Steps 
@@ -70,14 +76,18 @@ https://qiita.com/kyosuke5_20/items/c5f68fc9d89b84c0df09
 
 8. npm run sandbox
 
+
 9. For public, Request the application
+
 https://developer.adobelaunch.com/extensions/submissions/create-listing/
+
 https://partners.adobe.com/exchangeprogram/experiencecloud
 
 
 10. npm run package
 
 11. sudo npm install @adobe/reactor-uploader --save-dev
+
 12. modify the package.json and npm run upload
   "scripts": {
     "scaffold": "reactor-scaffold",
@@ -85,6 +95,7 @@ https://partners.adobe.com/exchangeprogram/experiencecloud
     "package": "reactor-packager",
     "upload": "reactor-uploader"
   },
+  
 
 13. Questions
 >What is the path to your private key? 
