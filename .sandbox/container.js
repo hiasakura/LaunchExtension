@@ -1,19 +1,47 @@
+
+
 module.exports = {
-  "dataElements": {},
-  "rules": [],
-  "extensions": {},
-  "property": {
-    "settings": {
-      "domains": ["example.com"]
+  rules: [
+    {
+    name: 'Example Rule',
+    events: [
+      {
+        modulePath: 'sandbox/pageTop.js',
+        settings: {}
+         }
+       ],
+    actions: [
+      {
+        modulePath: 'extension-typekit/src/lib/actions/loadEmbedCode.js',
+        settings: {}
+         }
+       ]
+     }
+  ],
+  extensions: {
+    'extension-typekit': {
+      displayName: 'Adobe Typekit',
+     settings: {
+       msgID: 'nxn1sig'
+     }
+   }
+  },
+  property: {
+    name: 'Sandbox property',
+    settings: {
+      domains: [
+        'adobe.com',
+        'example.com'
+      ],
+      linkDelay: 100,
+      trackingCookieName: 'sat_track',
+      undefinedVarsReturnEmpty: false
     }
   },
-  "company": {
-    "orgId": "ABCDEFGHIJKLMNOPQRSTUVWX@AdobeOrg"
-  },
-  "buildInfo": {
-    "turbineVersion": "25.5.0",
-    "turbineBuildDate": "2019-06-15T14:18:12.117Z",
-    "buildDate": "2019-06-15T14:18:12.117Z",
-    "environment": "development"
+  buildInfo: {
+    turbineVersion: '14.0.0',
+    turbineBuildDate: '2016-07-01T18:10:34Z',
+    buildDate: '2016-08-01T12:10:33Z',
+    environment: 'development'
   }
-}
+};

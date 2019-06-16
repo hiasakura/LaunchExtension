@@ -1,54 +1,58 @@
 <!doctype html>
 <html lang="en">
 
-  <head>
-    <meta charset="UTF-8">
-    <title>Hirocafe Extension Configuration</title>
-    <meta name="description" content="Configure Github Path">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" href="./spectrum-core.css">
-    <link rel="stylesheet" href="./spectrum-light.css">
-    <style>
-      input:invalid {
-        border: 1px solid red;
-      }
-    </style>
-  </head>
-  <body>
+<head>
+  <meta charset="UTF-8">
+  <title>Adobe Fonts Extension Configuration</title>
+  <meta name="description" content="Configure Typekit ID">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <link rel="stylesheet" href="./spectrum-core.css">
+  <link rel="stylesheet" href="./spectrum-light.css">
+  <style>
+    input:invalid {
+      border: 1px solid red;
+    }
+  </style>
+</head>
+
+<body class="spectrum spectrum--light">
   <div class="container">
-    <h3>This is sample Extension Code for Hirofumi</h3>
-    <p>Use this extension to update customize code
-    <p>Enter your Git path here:</p>
+    <h3>Display your msg on your web-site</h3>
+    <p>Enter Message Here</p>
     <form class="spectrum-Form">
       <div class="spectrum-Form-item">
-        <label class="spectrum-Form-itemLabel spectrum-FieldLabel--left" for="githubPath">Git Path</label>
+        <label class="spectrum-Form-itemLabel spectrum-FieldLabel--left" for="msgID">Message</label>
         <div class="spectrum-Form-itemField">
-          <input type="text" id="githubPath" class="spectrum-Textfield" required autofocus>
+          <input type="text" id="msgID" class="spectrum-Textfield" required autofocus>
         </div>
       </div>
     </form>
   </div>
 
-    <script src="https://assets.adobedtm.com/activation/reactor/extensionbridge/extensionbridge.min.js"></script>
-    <script>
+  <script src="https://assets.adobedtm.com/activation/reactor/extensionbridge/extensionbridge.min.js"></script>
+  <script>
 
-      var githubPathInput = document.getElementById('githubPath');
+    var msgIDInput = document.getElementById('msgID');
 
-      window.extensionBridge.register({
-        init: function(info) {
-          if (info.settings) {
-            githubPathInput.value = info.settings.githubPath;
-          }
-        },
-
-        getSettings: function() {
-          githubPath: githubPathInput.value
-        },
-
-        validate: function() {
-          return githubPathInput.checkValidity();
+    window.extensionBridge.register({
+      init: function (info) {
+        if (info.settings) {
+          msgIDInput.value = info.settings.msgID;
         }
-      });
-    </script>
-  </body>
+      },
+
+      getSettings: function () {
+        return {
+          msgID: msgIDInput.value
+        }
+      },
+
+      validate: function () {
+        return msgIDInput.checkValidity();
+      }
+    });
+  </script>
+</body>
+
 </html>
